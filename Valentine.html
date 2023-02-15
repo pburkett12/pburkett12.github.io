@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Valentine</title>
+<meta charset="utf-8">
+<!--Valentine. Porter Burkett. 2/7/2023-->
+<style>
+body{background-color: #F18FE9}
+
+.maintext{
+	text-align: center;
+	color: white;
+		}
+
+.heart1{
+	
+	}
+
+.heart2{
+	float: right;
+	}
+
+</style>
+
+<script>
+	function dance1(x,y){document.getElementById(x).src=y;}
+	
+	function dance2(x,y){document.getElementById(x).src=y;}
+
+	function danceoff(a,b){document.getElementById(a).src="ValentineImages/retroheart2.jpg";
+	document.getElementById(b).src="ValentineImages/transp_heart.jpg"}
+</script>
+
+</head>
+<body>
+
+	<div class="heart1">
+		<img id="retroheart" src="ValentineImages/retroheart2.jpg" alt="Heart clip art" height="276" width="300">
+	</div>
+
+	<div 
+			onmouseover="dance1('retroheart','ValentineImages/threeheart.jpg');
+			dance2('reg_heart','ValentineImages/threeheart.jpg')"
+			onmouseout="danceoff('retroheart','reg_heart')"
+		>
+			<h1 class="maintext">Happy Valentine's Day!</h1>
+	
+			<h2 class="maintext">You make my heart dance</h2>
+	</div>
+
+	<div class="heart2">
+		<img id="reg_heart" src="ValentineImages/transp_heart.jpg" alt="Heart clip art">
+	</div>
+
+
+
+
+
+</body>
+</html>
